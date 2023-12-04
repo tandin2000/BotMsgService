@@ -1,6 +1,6 @@
 # Bot Chat Integration
 
-Effortlessly automate tasks, from scheduling messages to content organization, enhancing efficiency. With a user-friendly interface and customizable features, this bot is the solution for seamless integration, saving time, and boosting overall team productivity.
+Effortlessly automate tasks, from scheduling messages to content organization, enhancing efficiency. This bot is the solution for seamless integration, saving time, and boosting overall team productivity.
 
 Currently Applicable : Slack
 
@@ -9,19 +9,24 @@ Currently Applicable : Slack
 ## Installation
 
 ```bash
-npm i Bot_chat_integration
+npm i ams-bot
 ```
 
 ## Usage
 
 ```JavaScript
-const { sendMessage } = require("Bot_chat_integration"); // import the installed package
+const { sendMessage } = require("ams-bot"); // import the installed package
 
 // Replace these values with your actual data
 const channel = 'your_channel_id';
 const message = 'Hello, Slack!';
 const slackApiToken = 'your_slack_api_token';
+const pin = 'boolean (true/false)'
 
-sendMessage(channel, message, slackApiToken);
+sendMessage(channel, message, slackApiToken, pin);
 
 ```
+
+## Tagging someone
+
+in message pass <@${userName}> pass the userID !!!
